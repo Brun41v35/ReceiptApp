@@ -8,7 +8,6 @@ final class ReceiptView: UIView {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .red
         return tableView
     }()
 
