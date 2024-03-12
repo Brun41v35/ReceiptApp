@@ -1,6 +1,6 @@
 import UIKit
 
-struct ReceiptViewModelCell {
+struct ReceiptListViewModelCell {
     let title: String
     let name: String
     let date: String
@@ -105,7 +105,7 @@ final class ReceiptListViewCell: UIView {
 
 extension ReceiptListViewCell: ReceiptViewCellType {
 
-    func show(viewModel: ReceiptViewModelCell) {
+    func show(viewModel: ReceiptListViewModelCell) {
         titleLabel.text = viewModel.title
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
