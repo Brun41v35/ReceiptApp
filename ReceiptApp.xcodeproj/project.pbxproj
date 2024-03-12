@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
 		7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */; };
 		7EFF51992B9FDCA5004EDED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51972B9FDCA5004EDED5 /* LaunchScreen.storyboard */; };
 		7EFF51C12B9FE343004EDED5 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C02B9FE343004EDED5 /* ReceiptViewController.swift */; };
 		7EFF51C52B9FE42F004EDED5 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C42B9FE42F004EDED5 /* ReceiptView.swift */; };
+		7EFF51C72B9FEF4F004EDED5 /* ReceiptViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C62B9FEF4F004EDED5 /* ReceiptViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProtocols.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		7EFF519F2B9FDCA5004EDED5 /* ReceiptAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF51C02B9FE343004EDED5 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		7EFF51C42B9FE42F004EDED5 /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		7EFF51C62B9FEF4F004EDED5 /* ReceiptViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 			children = (
 				7EFF51C32B9FE423004EDED5 /* View */,
 				7EFF51C02B9FE343004EDED5 /* ReceiptViewController.swift */,
+				7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFF51C42B9FE42F004EDED5 /* ReceiptView.swift */,
+				7EFF51C62B9FEF4F004EDED5 /* ReceiptViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,7 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */,
 				7EFF51C12B9FE343004EDED5 /* ReceiptViewController.swift in Sources */,
+				7EFF51C72B9FEF4F004EDED5 /* ReceiptViewCell.swift in Sources */,
 				7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
 				7EFF51C52B9FE42F004EDED5 /* ReceiptView.swift in Sources */,
