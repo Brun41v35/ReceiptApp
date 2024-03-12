@@ -1,6 +1,6 @@
 import UIKit
 
-final class ReceiptViewController: UIViewController {
+final class ReceiptListViewController: UIViewController {
 
     // MARK: - Private Properties
 
