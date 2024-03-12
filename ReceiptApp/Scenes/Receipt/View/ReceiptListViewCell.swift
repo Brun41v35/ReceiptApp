@@ -1,12 +1,5 @@
 import UIKit
 
-struct ReceiptListViewModelCell {
-    let title: String
-    let name: String
-    let date: String
-    let amount: String
-}
-
 final class ReceiptListViewCell: UIView {
 
     // MARK: - Private Properties
