@@ -74,10 +74,10 @@
 		7EFF518B2B9FDCA4004EDED5 /* ReceiptApp */ = {
 			isa = PBXGroup;
 			children = (
-				7EFF51BE2B9FE048004EDED5 /* Assets */,
-				7EFF51BD2B9FE037004EDED5 /* Resources */,
 				7EFF51BC2B9FE027004EDED5 /* AppDelegate */,
-				7EFF51902B9FDCA4004EDED5 /* ViewController.swift */,
+				7EFF51BE2B9FE048004EDED5 /* Assets */,
+				7EFF51BF2B9FE147004EDED5 /* Scenes */,
+				7EFF51BD2B9FE037004EDED5 /* Resources */,
 			);
 			path = ReceiptApp;
 			sourceTree = "<group>";
@@ -113,6 +113,14 @@
 				7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		7EFF51BF2B9FE147004EDED5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF51902B9FDCA4004EDED5 /* ViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
