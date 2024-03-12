@@ -1,6 +1,6 @@
 import UIKit
 
-final class ReceiptView: UIView {
+final class ReceiptListView: UIView {
 
     // MARK: - Private Properties
 
