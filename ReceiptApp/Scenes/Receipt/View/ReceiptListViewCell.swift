@@ -7,7 +7,7 @@ struct ReceiptViewModelCell {
     let amount: String
 }
 
-final class ReceiptViewCell: UIView {
+final class ReceiptListViewCell: UIView {
 
     // MARK: - Private Properties
 
@@ -103,7 +103,7 @@ final class ReceiptViewCell: UIView {
 
 // MARK: - ReceiptViewCellType
 
-extension ReceiptViewCell: ReceiptViewCellType {
+extension ReceiptListViewCell: ReceiptViewCellType {
 
     func show(viewModel: ReceiptViewModelCell) {
         titleLabel.text = viewModel.title
