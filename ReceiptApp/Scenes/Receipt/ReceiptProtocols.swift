@@ -1,5 +1,6 @@
 import UIKit
 
-protocol ReceiptViewCellType where Self: UIView {
-    func show(viewModel: ReceiptListViewModelCell)
+protocol ReceiptListViewType where Self: UIView {
+    func show(dataSource: UITableViewDataSource,
+              delegate: UITableViewDelegate)
 }
