@@ -1,11 +1,12 @@
 import UIKit
 
-final class ReceiptListViewCell: UIView {
+final class ReceiptListViewCell: UITableViewCell {
 
     // MARK: - Private Properties
 
     private let contentStackView: UIStackView = {
         let stackView = UIStackView()
+        stackView.distribution = .equalSpacing
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -13,6 +14,7 @@ final class ReceiptListViewCell: UIView {
     private let lendingStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.spacing = 5
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -20,6 +22,7 @@ final class ReceiptListViewCell: UIView {
     private let trailingStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.spacing = 5
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -54,8 +57,8 @@ final class ReceiptListViewCell: UIView {
 
     // MARK: - Init
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
 
@@ -96,11 +99,8 @@ final class ReceiptListViewCell: UIView {
     private func setupBackgroundColor() {
         backgroundColor = .systemBackground
     }
-}
 
-// MARK: - ReceiptViewCellType
-
-extension ReceiptListViewCell: ReceiptViewCellType {
+    // MARK: - Internal Methods
 
     func show(viewModel: ReceiptListViewModelCell) {
         titleLabel.text = viewModel.title
