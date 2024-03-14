@@ -37,14 +37,31 @@ final class ReceiptListView: UIView {
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            tableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8)
         ])
     }
 
     private func setupBackgroundColor() {
         backgroundColor = .systemBackground
+    }
+
+    private func setupTableView(with dataSource: UITableViewDataSource,
+                                and delegate: UITableViewDelegate) {
+        tableView.dataSource = dataSource
+        tableView.delegate = delegate
+        tableView.register(ReceiptListViewCell.self, forCellReuseIdentifier: "ReceiptListViewCell")
+    }
+}
+
+// MARK: - ReceiptListViewType
+
+extension ReceiptListView: ReceiptListViewType {
+
+    func show(dataSource: UITableViewDataSource,
+              delegate: UITableViewDelegate) {
+        setupTableView(with: dataSource, and: delegate)
     }
 }
