@@ -50,7 +50,8 @@ extension ReceiptListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptListViewCell", for: indexPath) as? ReceiptListViewCell else {
             return UITableViewCell()
         }
-        cell.show(viewModel: ReceiptListViewModelCell(title: "title", name: "name", date: "date", amount: "amount"))
+        let viewModel = ReceiptListViewModelCell(title: "title", name: "name", date: "date", amount: "amount")
+        cell.show(viewModel: viewModel)
 
         return cell
     }
