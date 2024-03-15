@@ -7,6 +7,7 @@ final class ReceiptListView: UIView {
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
+        tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()

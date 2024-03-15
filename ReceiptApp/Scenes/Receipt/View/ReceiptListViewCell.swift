@@ -4,7 +4,15 @@ final class ReceiptListViewCell: UITableViewCell {
 
     // MARK: - Private Properties
 
-    private let contentStackView: UIStackView = {
+    private let containerView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 8
+        view.backgroundColor = .systemGreen
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    private let horizontalStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.distribution = .equalSpacing
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -76,9 +84,11 @@ final class ReceiptListViewCell: UITableViewCell {
     }
 
     private func addHierarchyView() {
-        addSubview(contentStackView)
-        contentStackView.addArrangedSubview(lendingStackView)
-        contentStackView.addArrangedSubview(trailingStackView)
+        addSubview(containerView)
+        containerView.addSubview(horizontalStackView)
+
+        horizontalStackView.addArrangedSubview(lendingStackView)
+        horizontalStackView.addArrangedSubview(trailingStackView)
 
         lendingStackView.addArrangedSubview(titleLabel)
         lendingStackView.addArrangedSubview(nameLabel)
@@ -89,10 +99,17 @@ final class ReceiptListViewCell: UITableViewCell {
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            contentStackView.topAnchor.constraint(equalTo: topAnchor),
-            contentStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contentStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            contentStackView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            containerView.topAnchor.constraint(equalTo: topAnchor),
+            containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4),
+            containerView.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
+
+        NSLayoutConstraint.activate([
+            horizontalStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
+            horizontalStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8),
+            horizontalStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
+            horizontalStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8)
         ])
     }
 
