@@ -27,10 +27,20 @@ final class ReceiptListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableViewDataSource()
+        setup()
     }
 
     // MARK: - Setup
+
+    private func setup() {
+        setupNavigationTitle()
+        setupTableViewDataSource()
+    }
+
+    private func setupNavigationTitle() {
+        title = "Receipt 🧾"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 
     private func setupTableViewDataSource() {
         contentView.show(dataSource: self, delegate: self)
@@ -50,6 +60,7 @@ extension ReceiptListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptListViewCell", for: indexPath) as? ReceiptListViewCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         let viewModel = ReceiptListViewModelCell(title: "title", name: "name", date: "date", amount: "amount")
         cell.show(viewModel: viewModel)
 
