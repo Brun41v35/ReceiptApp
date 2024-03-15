@@ -7,7 +7,7 @@ final class ReceiptListViewCell: UITableViewCell {
     private let containerView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 8
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = .primaryGreen
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -107,9 +107,9 @@ final class ReceiptListViewCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
             horizontalStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
-            horizontalStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8),
+            horizontalStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             horizontalStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
-            horizontalStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8)
+            horizontalStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16)
         ])
     }
 
