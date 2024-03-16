@@ -61,7 +61,10 @@ extension ReceiptListViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.selectionStyle = .none
-        let viewModel = ReceiptListViewModelCell(title: "title", name: "name", date: "date", amount: "amount")
+        let viewModel = ReceiptListViewModelCell(title: "Transferência",
+                                                 name: "Débora dos Santos",
+                                                 date: "qua, 27 de abril de 2022",
+                                                 amount: "R$ 5.000,00")
         cell.show(viewModel: viewModel)
 
         return cell
