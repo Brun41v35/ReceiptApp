@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E61FA9F2BA519F7005C9786 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */; };
+		7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */; };
+		7E61FAA72BA5458D005C9786 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */; };
+		7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */; };
 		7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */; };
 		7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewCellTests.swift; sourceTree = "<group>"; };
+		7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReceiptListViewModelCell+Stub.swift"; sourceTree = "<group>"; };
 		7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProtocols.swift; sourceTree = "<group>"; };
 		7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModelCell.swift; sourceTree = "<group>"; };
 		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
@@ -51,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E61FA9F2BA519F7005C9786 /* iOSSnapshotTestCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +62,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E61FAA72BA5458D005C9786 /* iOSSnapshotTestCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E61FAA02BA51A6B005C9786 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA12BA51A7B005C9786 /* Receipt */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7E61FAA12BA51A7B005C9786 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA22BA51A86005C9786 /* View */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		7E61FAA22BA51A86005C9786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA82BA54A26005C9786 /* Doubles */,
+				7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E61FAA82BA54A26005C9786 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
 		7EE14B5A2BA0D83400046883 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +142,7 @@
 		7EFF51A22B9FDCA5004EDED5 /* ReceiptAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7E61FAA02BA51A6B005C9786 /* Scenes */,
 			);
 			path = ReceiptAppTests;
 			sourceTree = "<group>";
@@ -181,7 +219,6 @@
 			);
 			name = ReceiptApp;
 			packageProductDependencies = (
-				7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */,
 			);
 			productName = ReceiptApp;
 			productReference = 7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */;
@@ -201,6 +238,9 @@
 				7EFF51A12B9FDCA5004EDED5 /* PBXTargetDependency */,
 			);
 			name = ReceiptAppTests;
+			packageProductDependencies = (
+				7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */,
+			);
 			productName = ReceiptAppTests;
 			productReference = 7EFF519F2B9FDCA5004EDED5 /* ReceiptAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -220,6 +260,7 @@
 					};
 					7EFF519E2B9FDCA5004EDED5 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 7EFF51882B9FDCA4004EDED5;
 					};
 				};
@@ -234,7 +275,7 @@
 			);
 			mainGroup = 7EFF51802B9FDCA4004EDED5;
 			packageReferences = (
-				7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+				7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
 			);
 			productRefGroup = 7EFF518A2B9FDCA4004EDED5 /* Products */;
 			projectDirPath = "";
@@ -285,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */,
+				7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +541,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
@@ -511,6 +555,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptApp";
@@ -522,6 +567,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
@@ -574,9 +620,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+		7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/uber/ios-snapshot-test-case?tab=readme-ov-file";
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 8.0.0;
@@ -585,9 +631,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */ = {
+		7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			package = 7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
 			productName = iOSSnapshotTestCase;
 		};
 /* End XCSwiftPackageProductDependency section */
