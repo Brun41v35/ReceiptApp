@@ -4,11 +4,11 @@ final class ReceiptListViewController: UIViewController {
 
     // MARK: - Private Properties
 
-    private let contentView: ReceiptListView
+    private let contentView: ReceiptListViewType
 
     // MARK: - Init
 
-    init(contentView: ReceiptListView = ReceiptListView()) {
+    init(contentView: ReceiptListViewType = ReceiptListView()) {
         self.contentView = contentView
         super.init(nibName: nil, bundle: nil)
     }
