@@ -45,6 +45,9 @@ final class ReceiptListViewCell: UITableViewCell {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.adjustsFontForContentSizeCategory = true
+        label.setContentCompressionResistancePriority(.fittingSizeLevel, for: .horizontal)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -52,6 +55,7 @@ final class ReceiptListViewCell: UITableViewCell {
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.adjustsFontForContentSizeCategory = true
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
