@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E61FA9F2BA519F7005C9786 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */; };
 		7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */; };
 		7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E61FA9F2BA519F7005C9786 /* iOSSnapshotTestCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +180,9 @@
 			dependencies = (
 			);
 			name = ReceiptApp;
+			packageProductDependencies = (
+				7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */,
+			);
 			productName = ReceiptApp;
 			productReference = 7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 7EFF51802B9FDCA4004EDED5;
+			packageReferences = (
+				7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
 			productRefGroup = 7EFF518A2B9FDCA4004EDED5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -564,6 +572,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E61FA9E2BA519F7005C9786 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E61FA9D2BA519F7005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EFF51812B9FDCA4004EDED5 /* Project object */;
 }
