@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7E5688E82BA70DDC00FFAF82 /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5688E72BA70DDC00FFAF82 /* ReceiptProtocols.swift */; };
+		7E5688EA2BA7129100FFAF82 /* ReceiptListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5688E92BA7129100FFAF82 /* ReceiptListPresenter.swift */; };
+		7E5688ED2BA7189C00FFAF82 /* receiptData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E5688EC2BA7189C00FFAF82 /* receiptData.json */; };
 		7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */; };
 		7E61FAA72BA5458D005C9786 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */; };
 		7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		7E5688E72BA70DDC00FFAF82 /* ReceiptProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProtocols.swift; sourceTree = "<group>"; };
+		7E5688E92BA7129100FFAF82 /* ReceiptListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListPresenter.swift; sourceTree = "<group>"; };
+		7E5688EC2BA7189C00FFAF82 /* receiptData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = receiptData.json; sourceTree = "<group>"; };
 		7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewCellTests.swift; sourceTree = "<group>"; };
 		7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReceiptListViewModelCell+Stub.swift"; sourceTree = "<group>"; };
 		7E88671D2BA072DA008AFE4F /* ReceiptListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListProtocols.swift; sourceTree = "<group>"; };
@@ -81,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E5688EB2BA7186D00FFAF82 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				7E5688EC2BA7189C00FFAF82 /* receiptData.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		7E61FAA02BA51A6B005C9786 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +158,7 @@
 		7EA542D82BA6774B00F2E3AB /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				7E5688EB2BA7186D00FFAF82 /* Mock */,
 				7EE14B5A2BA0D83400046883 /* Model */,
 				7EA542D92BA6776500F2E3AB /* Views */,
 			);
@@ -246,6 +259,7 @@
 				7EFF51C32B9FE423004EDED5 /* View */,
 				7EFF51C02B9FE343004EDED5 /* ReceiptListViewController.swift */,
 				7E88671D2BA072DA008AFE4F /* ReceiptListProtocols.swift */,
+				7E5688E92BA7129100FFAF82 /* ReceiptListPresenter.swift */,
 			);
 			path = ReceiptList;
 			sourceTree = "<group>";
@@ -350,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5688ED2BA7189C00FFAF82 /* receiptData.json in Resources */,
 				7EFF51992B9FDCA5004EDED5 /* LaunchScreen.storyboard in Resources */,
 				7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */,
 			);
@@ -374,6 +389,7 @@
 				7EFF51C72B9FEF4F004EDED5 /* ReceiptListViewCell.swift in Sources */,
 				7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */,
 				7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */,
+				7E5688EA2BA7129100FFAF82 /* ReceiptListPresenter.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
 				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
 				7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */,
