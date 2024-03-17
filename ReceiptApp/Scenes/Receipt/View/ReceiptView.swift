@@ -38,7 +38,6 @@ final class ReceiptView: UIView {
 
     private let titleValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "Transferência"
         return label
     }()
 
@@ -58,7 +57,6 @@ final class ReceiptView: UIView {
 
     private let nameValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "Bruno Alves da Silva"
         return label
     }()
 
@@ -78,7 +76,6 @@ final class ReceiptView: UIView {
 
     private let receiverNameValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "João da Silva"
         return label
     }()
 
@@ -98,7 +95,6 @@ final class ReceiptView: UIView {
 
     private let amountValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "R$ 5.000,00"
         return label
     }()
 
@@ -118,7 +114,6 @@ final class ReceiptView: UIView {
 
     private let dateValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "qua, 27 de abril de 2022"
         return label
     }()
 
@@ -138,7 +133,6 @@ final class ReceiptView: UIView {
 
     private let controlValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "HDUS36217367127DS"
         return label
     }()
 
@@ -158,7 +152,6 @@ final class ReceiptView: UIView {
 
     private let receiptIdValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "112312"
         return label
     }()
 
@@ -242,6 +235,7 @@ final class ReceiptView: UIView {
 extension ReceiptView: ReceiptViewType {
 
     func show(viewModel: Informations) {
+        print("VALOR 🤩: \(viewModel)")
         titleValueLabel.text = viewModel.title
         nameValueLabel.text = viewModel.name
         receiverNameValueLabel.text = viewModel.receiverName
