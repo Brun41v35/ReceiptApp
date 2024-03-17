@@ -16,8 +16,73 @@ final class ReceiptView: UIView {
         let stack = UIStackView()
         stack.axis = .vertical
         stack.backgroundColor = .green
+        stack.spacing = 5
+        stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
+    }()
+
+    private let titleStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Titulo"
+        return label
+    }()
+
+    private let titleValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Transferência"
+        return label
+    }()
+
+    private let nameStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Nome"
+        return label
+    }()
+
+    private let nameValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Bruno Alves da Silva"
+        return label
+    }()
+
+    private let receiverNameStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let receiverNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Nome do favorecido"
+        return label
+    }()
+
+    private let receiverNameValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "João da Silva"
+        return label
     }()
 
     // MARK: - Init
@@ -43,6 +108,18 @@ final class ReceiptView: UIView {
     private func addHierarchyView() {
         addSubview(containerView)
         containerView.addSubview(containerStackView)
+        containerStackView.addArrangedSubview(titleStackView)
+        containerStackView.addArrangedSubview(nameStackView)
+        containerStackView.addArrangedSubview(receiverNameStackView)
+    
+        titleStackView.addArrangedSubview(titleLabel)
+        titleStackView.addArrangedSubview(titleValueLabel)
+
+        nameStackView.addArrangedSubview(nameLabel)
+        nameStackView.addArrangedSubview(nameValueLabel)
+
+        receiverNameStackView.addArrangedSubview(receiverNameLabel)
+        receiverNameStackView.addArrangedSubview(receiverNameValueLabel)
     }
 
     private func setupConstraints() {
