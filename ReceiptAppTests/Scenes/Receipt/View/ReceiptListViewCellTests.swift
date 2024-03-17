@@ -7,6 +7,8 @@ final class ReceiptListViewCellTests: FBSnapshotTestCase {
 
     private var sut: ReceiptListViewCell!
 
+    // MARK: - LifeCycle
+
     override func setUp() {
         super.setUp()
         makeSUT()
