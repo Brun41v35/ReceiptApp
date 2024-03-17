@@ -15,6 +15,8 @@
 		7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */; };
 		7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */; };
 		7EA542D12BA6721D00F2E3AB /* ReceiptListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */; };
+		7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */; };
+		7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D62BA6750100F2E3AB /* ReceiptView.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
@@ -43,6 +45,8 @@
 		7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewControllerTests.swift; sourceTree = "<group>"; };
 		7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewSpy.swift; sourceTree = "<group>"; };
 		7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewTests.swift; sourceTree = "<group>"; };
+		7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		7EA542D62BA6750100F2E3AB /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,38 @@
 			path = Doubles;
 			sourceTree = "<group>";
 		};
+		7EA542D22BA673E800F2E3AB /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542D32BA6749300F2E3AB /* View */,
+				7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		7EA542D32BA6749300F2E3AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542D62BA6750100F2E3AB /* ReceiptView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EA542D82BA6774B00F2E3AB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542D92BA6776500F2E3AB /* Views */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7EA542D92BA6776500F2E3AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7EE14B5A2BA0D83400046883 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +186,7 @@
 			children = (
 				7EFF51BC2B9FE027004EDED5 /* AppDelegate */,
 				7EFF51BE2B9FE048004EDED5 /* Assets */,
+				7EA542D82BA6774B00F2E3AB /* Commons */,
 				7EFF51BF2B9FE147004EDED5 /* Scenes */,
 				7EFF51BD2B9FE037004EDED5 /* Resources */,
 			);
@@ -194,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFF51C22B9FE410004EDED5 /* ReceiptList */,
+				7EA542D22BA673E800F2E3AB /* Receipt */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -331,9 +369,11 @@
 				7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */,
 				7EFF51C12B9FE343004EDED5 /* ReceiptListViewController.swift in Sources */,
 				7EFF51C72B9FEF4F004EDED5 /* ReceiptListViewCell.swift in Sources */,
+				7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */,
 				7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
 				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
+				7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */,
 				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
 				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
 			);
