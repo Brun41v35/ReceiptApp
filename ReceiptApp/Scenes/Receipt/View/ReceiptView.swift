@@ -241,7 +241,7 @@ final class ReceiptView: UIView {
 
 extension ReceiptView: ReceiptViewType {
 
-    func show(viewModel: Receipts) {
+    func show(viewModel: Informations) {
         titleValueLabel.text = viewModel.title
         nameValueLabel.text = viewModel.name
         receiverNameValueLabel.text = viewModel.receiverName
