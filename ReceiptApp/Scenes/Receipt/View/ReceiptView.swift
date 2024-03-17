@@ -1,8 +1,5 @@
 import UIKit
 
-protocol ReceiptViewType where Self: UIView {
-    func show(viewModel: Receipts)
-}
 
 final class ReceiptView: UIView {
 
