@@ -12,6 +12,8 @@
 		7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */; };
 		7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */; };
 		7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */; };
+		7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */; };
+		7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
@@ -37,6 +39,8 @@
 		7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReceiptListViewModelCell+Stub.swift"; sourceTree = "<group>"; };
 		7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProtocols.swift; sourceTree = "<group>"; };
 		7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModelCell.swift; sourceTree = "<group>"; };
+		7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewControllerTests.swift; sourceTree = "<group>"; };
+		7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewSpy.swift; sourceTree = "<group>"; };
 		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 		7E61FAA12BA51A7B005C9786 /* Receipt */ = {
 			isa = PBXGroup;
 			children = (
+				7EA542CD2BA62BE700F2E3AB /* Doubles */,
 				7E61FAA22BA51A86005C9786 /* View */,
+				7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -98,6 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		7EA542CD2BA62BE700F2E3AB /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -326,7 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */,
 				7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */,
+				7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */,
 				7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
