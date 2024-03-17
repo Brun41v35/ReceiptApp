@@ -21,6 +21,9 @@
 		7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */; };
 		7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D62BA6750100F2E3AB /* ReceiptView.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
+		7EEC35432BA7501C00DDEC13 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */; };
+		7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */; };
+		7EEC35472BA7505D00DDEC13 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35462BA7505D00DDEC13 /* APIError.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
 		7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */; };
@@ -54,6 +57,9 @@
 		7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		7EA542D62BA6750100F2E3AB /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
+		7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocols.swift; sourceTree = "<group>"; };
+		7EEC35462BA7505D00DDEC13 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		7EA542D82BA6774B00F2E3AB /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				7EEC35412BA7500B00DDEC13 /* Network */,
 				7E5688EB2BA7186D00FFAF82 /* Mock */,
 				7EE14B5A2BA0D83400046883 /* Model */,
 				7EA542D92BA6776500F2E3AB /* Views */,
@@ -178,6 +185,16 @@
 				7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7EEC35412BA7500B00DDEC13 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */,
+				7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */,
+				7EEC35462BA7505D00DDEC13 /* APIError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		7EFF51802B9FDCA4004EDED5 = {
@@ -392,10 +409,13 @@
 				7E5688EA2BA7129100FFAF82 /* ReceiptListPresenter.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
 				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
+				7EEC35472BA7505D00DDEC13 /* APIError.swift in Sources */,
 				7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */,
 				7E5688E82BA70DDC00FFAF82 /* ReceiptProtocols.swift in Sources */,
 				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
 				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
+				7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */,
+				7EEC35432BA7501C00DDEC13 /* NetworkManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
