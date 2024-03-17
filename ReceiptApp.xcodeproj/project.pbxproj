@@ -78,19 +78,19 @@
 		7E61FAA02BA51A6B005C9786 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7E61FAA12BA51A7B005C9786 /* Receipt */,
+				7E61FAA12BA51A7B005C9786 /* ReceiptList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		7E61FAA12BA51A7B005C9786 /* Receipt */ = {
+		7E61FAA12BA51A7B005C9786 /* ReceiptList */ = {
 			isa = PBXGroup;
 			children = (
 				7EA542CD2BA62BE700F2E3AB /* Doubles */,
 				7E61FAA22BA51A86005C9786 /* View */,
 				7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */,
 			);
-			path = Receipt;
+			path = ReceiptList;
 			sourceTree = "<group>";
 		};
 		7E61FAA22BA51A86005C9786 /* View */ = {
