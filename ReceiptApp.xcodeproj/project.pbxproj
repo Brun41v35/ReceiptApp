@@ -25,6 +25,8 @@
 		7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */; };
 		7EEC35472BA7505D00DDEC13 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35462BA7505D00DDEC13 /* APIError.swift */; };
 		7EEC35492BA76F9E00DDEC13 /* ReceiptListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35482BA76F9E00DDEC13 /* ReceiptListAdapter.swift */; };
+		7EEC354B2BA780F800DDEC13 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC354A2BA780F800DDEC13 /* MainCoordinator.swift */; };
+		7EEC354D2BA7831200DDEC13 /* MainCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC354C2BA7831200DDEC13 /* MainCoordinatorProtocols.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
 		7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocols.swift; sourceTree = "<group>"; };
 		7EEC35462BA7505D00DDEC13 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7EEC35482BA76F9E00DDEC13 /* ReceiptListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListAdapter.swift; sourceTree = "<group>"; };
+		7EEC354A2BA780F800DDEC13 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		7EEC354C2BA7831200DDEC13 /* MainCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProtocols.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				7EFF51C22B9FE410004EDED5 /* ReceiptList */,
 				7EA542D22BA673E800F2E3AB /* Receipt */,
+				7EEC354A2BA780F800DDEC13 /* MainCoordinator.swift */,
+				7EEC354C2BA7831200DDEC13 /* MainCoordinatorProtocols.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -414,8 +420,10 @@
 				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
 				7EEC35472BA7505D00DDEC13 /* APIError.swift in Sources */,
 				7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */,
+				7EEC354B2BA780F800DDEC13 /* MainCoordinator.swift in Sources */,
 				7E5688E82BA70DDC00FFAF82 /* ReceiptProtocols.swift in Sources */,
 				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
+				7EEC354D2BA7831200DDEC13 /* MainCoordinatorProtocols.swift in Sources */,
 				7EEC35492BA76F9E00DDEC13 /* ReceiptListAdapter.swift in Sources */,
 				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
 				7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */,

@@ -11,10 +11,15 @@ protocol ReceiptListPresenterType {
 }
 
 protocol ReceiptListViewControllerType: AnyObject {
+    var delegate: ReceiptListViewControllerDelegate? { get set }
     var receiptCell: [ReceiptListViewModelCell]? { get set }
     var informations: [Informations]? { get set }
 }
 
 protocol ReceiptListAdapterType {
     func adapt(with receiptData: ReceiptData) -> [ReceiptListViewModelCell]
+}
+
+protocol ReceiptListViewControllerDelegate: AnyObject {
+    func showReceipt(with informations: Informations)
 }

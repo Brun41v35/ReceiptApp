@@ -3,16 +3,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: MainCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let presenter = ReceiptListPresenter(networkManager: NetworkManagerMock())
-        let controller = ReceiptListViewController(presenter: presenter)
-        presenter.viewController = controller
+        let navigationController = UINavigationController()
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navigationController
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
     }

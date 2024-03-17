@@ -4,6 +4,7 @@ final class ReceiptListViewController: UIViewController, ReceiptListViewControll
 
     // MARK: - Internal
 
+    var delegate: ReceiptListViewControllerDelegate?
     var receiptCell: [ReceiptListViewModelCell]?
     var informations: [Informations]?
 
@@ -85,11 +86,6 @@ extension ReceiptListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let informations = informations?[indexPath.row] else { return }
-
-        let presenter = ReceiptPresenter(informations: informations)
-        let controller = ReceiptViewController(presenter: presenter)
-        presenter.viewController = controller
-
-        navigationController?.pushViewController(controller, animated: true)
+        delegate?.showReceipt(with: informations)
     }
 }
