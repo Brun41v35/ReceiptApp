@@ -85,6 +85,90 @@ final class ReceiptView: UIView {
         return label
     }()
 
+    private let amountStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let amountLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Valor"
+        return label
+    }()
+
+    private let amountValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "R$ 5.000,00"
+        return label
+    }()
+
+    private let dateStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let dateLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Data"
+        return label
+    }()
+
+    private let dateValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "qua, 27 de abril de 2022"
+        return label
+    }()
+
+    private let controlStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let controlLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Controle"
+        return label
+    }()
+
+    private let controlValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "HDUS36217367127DS"
+        return label
+    }()
+
+    private let receiptIdStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.backgroundColor = .brown
+        stack.distribution = .fillEqually
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+
+    private let receiptIdLabel: UILabel = {
+        let label = UILabel()
+        label.text = "ID da transação"
+        return label
+    }()
+
+    private let receiptIdValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "112312"
+        return label
+    }()
+
     // MARK: - Init
 
     override init(frame: CGRect) {
@@ -108,9 +192,14 @@ final class ReceiptView: UIView {
     private func addHierarchyView() {
         addSubview(containerView)
         containerView.addSubview(containerStackView)
+
         containerStackView.addArrangedSubview(titleStackView)
         containerStackView.addArrangedSubview(nameStackView)
         containerStackView.addArrangedSubview(receiverNameStackView)
+        containerStackView.addArrangedSubview(amountStackView)
+        containerStackView.addArrangedSubview(dateStackView)
+        containerStackView.addArrangedSubview(controlStackView)
+        containerStackView.addArrangedSubview(receiptIdStackView)
     
         titleStackView.addArrangedSubview(titleLabel)
         titleStackView.addArrangedSubview(titleValueLabel)
@@ -120,6 +209,18 @@ final class ReceiptView: UIView {
 
         receiverNameStackView.addArrangedSubview(receiverNameLabel)
         receiverNameStackView.addArrangedSubview(receiverNameValueLabel)
+
+        amountStackView.addArrangedSubview(amountLabel)
+        amountStackView.addArrangedSubview(amountValueLabel)
+
+        dateStackView.addArrangedSubview(dateLabel)
+        dateStackView.addArrangedSubview(dateValueLabel)
+
+        controlStackView.addArrangedSubview(controlLabel)
+        controlStackView.addArrangedSubview(controlValueLabel)
+
+        receiptIdStackView.addArrangedSubview(receiptIdLabel)
+        receiptIdStackView.addArrangedSubview(receiptIdValueLabel)
     }
 
     private func setupConstraints() {
