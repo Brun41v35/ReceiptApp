@@ -7,8 +7,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        let presenter = ReceiptListPresenter(networkManager: NetworkManagerMock())
+        let controller = ReceiptListViewController(presenter: presenter)
+        presenter.viewController = controller
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: ReceiptListViewController(presenter: ReceiptListPresenter()))
+        window?.rootViewController = UINavigationController(rootViewController: controller)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
     }
