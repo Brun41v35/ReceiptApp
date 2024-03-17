@@ -5,11 +5,14 @@ final class ReceiptListViewController: UIViewController {
     // MARK: - Private Properties
 
     private let contentView: ReceiptListViewType
+    private let presenter: ReceiptListPresenterType
 
     // MARK: - Init
 
-    init(contentView: ReceiptListViewType = ReceiptListView()) {
+    init(contentView: ReceiptListViewType = ReceiptListView(),
+         presenter: ReceiptListPresenterType) {
         self.contentView = contentView
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -35,6 +38,7 @@ final class ReceiptListViewController: UIViewController {
     private func setup() {
         setupNavigationTitle()
         setupTableViewDataSource()
+        presenter.loadData()
     }
 
     private func setupNavigationTitle() {
