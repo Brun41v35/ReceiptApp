@@ -1,5 +1,9 @@
 import UIKit
 
+protocol ReceiptViewType where Self: UIView {
+    func show(viewModel: Receipts)
+}
+
 final class ReceiptView: UIView {
 
     // MARK: - Private Properties
@@ -7,7 +11,7 @@ final class ReceiptView: UIView {
     private let containerView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 20
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -15,7 +19,6 @@ final class ReceiptView: UIView {
     private let containerStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .green
         stack.spacing = 5
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +28,6 @@ final class ReceiptView: UIView {
     private let titleStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -46,7 +48,6 @@ final class ReceiptView: UIView {
     private let nameStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -67,7 +68,6 @@ final class ReceiptView: UIView {
     private let receiverNameStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -88,7 +88,6 @@ final class ReceiptView: UIView {
     private let amountStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -109,7 +108,6 @@ final class ReceiptView: UIView {
     private let dateStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -130,7 +128,6 @@ final class ReceiptView: UIView {
     private let controlStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -151,7 +148,6 @@ final class ReceiptView: UIView {
     private let receiptIdStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.backgroundColor = .brown
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
@@ -240,10 +236,21 @@ final class ReceiptView: UIView {
     }
 
     private func setupBackgroundColor() {
-        backgroundColor = .systemBackground
+        backgroundColor = .defaultBackground
     }
 }
 
 // MARK: - ReceiptListViewType
 
-extension ReceiptListView {}
+extension ReceiptView: ReceiptViewType {
+
+    func show(viewModel: Receipts) {
+        titleValueLabel.text = viewModel.title
+        nameValueLabel.text = viewModel.name
+        receiverNameValueLabel.text = viewModel.receiverName
+        amountValueLabel.text = viewModel.amount
+        dateValueLabel.text = viewModel.date
+        controlValueLabel.text = viewModel.control
+        receiptIdValueLabel.text = viewModel.receiptId
+    }
+}
