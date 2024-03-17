@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */; };
+		7E61FAA72BA5458D005C9786 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */; };
+		7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */; };
+		7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */; };
+		7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */; };
+		7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */; };
+		7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */; };
+		7EA542D12BA6721D00F2E3AB /* ReceiptListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */; };
+		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
-		7EFF51912B9FDCA4004EDED5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51902B9FDCA4004EDED5 /* ViewController.swift */; };
 		7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */; };
 		7EFF51992B9FDCA5004EDED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51972B9FDCA5004EDED5 /* LaunchScreen.storyboard */; };
+		7EFF51C12B9FE343004EDED5 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C02B9FE343004EDED5 /* ReceiptListViewController.swift */; };
+		7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C42B9FE42F004EDED5 /* ReceiptListView.swift */; };
+		7EFF51C72B9FEF4F004EDED5 /* ReceiptListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF51C62B9FEF4F004EDED5 /* ReceiptListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +36,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewCellTests.swift; sourceTree = "<group>"; };
+		7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReceiptListViewModelCell+Stub.swift"; sourceTree = "<group>"; };
+		7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProtocols.swift; sourceTree = "<group>"; };
+		7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewModelCell.swift; sourceTree = "<group>"; };
+		7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewControllerTests.swift; sourceTree = "<group>"; };
+		7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewSpy.swift; sourceTree = "<group>"; };
+		7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewTests.swift; sourceTree = "<group>"; };
+		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EFF51902B9FDCA4004EDED5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EFF51982B9FDCA5004EDED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EFF519A2B9FDCA5004EDED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EFF519F2B9FDCA5004EDED5 /* ReceiptAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFF51C02B9FE343004EDED5 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
+		7EFF51C42B9FE42F004EDED5 /* ReceiptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListView.swift; sourceTree = "<group>"; };
+		7EFF51C62B9FEF4F004EDED5 /* ReceiptListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +68,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E61FAA72BA5458D005C9786 /* iOSSnapshotTestCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E61FAA02BA51A6B005C9786 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA12BA51A7B005C9786 /* Receipt */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7E61FAA12BA51A7B005C9786 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542CD2BA62BE700F2E3AB /* Doubles */,
+				7E61FAA22BA51A86005C9786 /* View */,
+				7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		7E61FAA22BA51A86005C9786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA82BA54A26005C9786 /* Doubles */,
+				7E61FAA32BA51A97005C9786 /* ReceiptListViewCellTests.swift */,
+				7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E61FAA82BA54A26005C9786 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7E61FAA92BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		7EA542CD2BA62BE700F2E3AB /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		7EE14B5A2BA0D83400046883 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7EFF51802B9FDCA4004EDED5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +159,7 @@
 		7EFF51A22B9FDCA5004EDED5 /* ReceiptAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7E61FAA02BA51A6B005C9786 /* Scenes */,
 			);
 			path = ReceiptAppTests;
 			sourceTree = "<group>";
@@ -118,9 +193,30 @@
 		7EFF51BF2B9FE147004EDED5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7EFF51902B9FDCA4004EDED5 /* ViewController.swift */,
+				7EFF51C22B9FE410004EDED5 /* Receipt */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7EFF51C22B9FE410004EDED5 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				7EE14B5A2BA0D83400046883 /* Model */,
+				7EFF51C32B9FE423004EDED5 /* View */,
+				7EFF51C02B9FE343004EDED5 /* ReceiptListViewController.swift */,
+				7E88671D2BA072DA008AFE4F /* ReceiptProtocols.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		7EFF51C32B9FE423004EDED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF51C62B9FEF4F004EDED5 /* ReceiptListViewCell.swift */,
+				7EFF51C42B9FE42F004EDED5 /* ReceiptListView.swift */,
+				7E8867202BA0756A008AFE4F /* ReceiptListViewModelCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +235,8 @@
 			dependencies = (
 			);
 			name = ReceiptApp;
+			packageProductDependencies = (
+			);
 			productName = ReceiptApp;
 			productReference = 7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +255,9 @@
 				7EFF51A12B9FDCA5004EDED5 /* PBXTargetDependency */,
 			);
 			name = ReceiptAppTests;
+			packageProductDependencies = (
+				7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */,
+			);
 			productName = ReceiptAppTests;
 			productReference = 7EFF519F2B9FDCA5004EDED5 /* ReceiptAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -176,6 +277,7 @@
 					};
 					7EFF519E2B9FDCA5004EDED5 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 7EFF51882B9FDCA4004EDED5;
 					};
 				};
@@ -189,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 7EFF51802B9FDCA4004EDED5;
+			packageReferences = (
+				7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
 			productRefGroup = 7EFF518A2B9FDCA4004EDED5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,9 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFF51912B9FDCA4004EDED5 /* ViewController.swift in Sources */,
+				7E88671E2BA072DA008AFE4F /* ReceiptProtocols.swift in Sources */,
+				7EFF51C12B9FE343004EDED5 /* ReceiptListViewController.swift in Sources */,
+				7EFF51C72B9FEF4F004EDED5 /* ReceiptListViewCell.swift in Sources */,
 				7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
+				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
+				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
+				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */,
+				7EA542D12BA6721D00F2E3AB /* ReceiptListViewTests.swift in Sources */,
+				7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */,
+				7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */,
+				7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +561,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
@@ -459,6 +575,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReceiptApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReceiptApp";
@@ -470,6 +587,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
@@ -520,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E61FAA62BA5458D005C9786 /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E61FAA52BA5458D005C9786 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EFF51812B9FDCA4004EDED5 /* Project object */;
 }
