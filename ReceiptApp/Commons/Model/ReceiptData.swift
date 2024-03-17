@@ -1,7 +1,7 @@
 import Foundation
 
 struct ReceiptData: Decodable, Equatable {
-    let receipts: [Receipts]
+    let data: [Receipts]
 }
 
 // MARK: - Receipts
