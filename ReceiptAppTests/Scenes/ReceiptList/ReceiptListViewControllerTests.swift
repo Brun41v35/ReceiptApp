@@ -5,6 +5,8 @@ final class ReceiptListViewControllerTests: XCTestCase {
 
     // MARK: - Properties
 
+    private var delegateSpy: ReceiptListViewControllerDelegateSpy!
+    private var presenterSpy: ReceiptListPresenterSpy!
     private var navigation: UINavigationController!
     private var contentViewSpy: ReceiptListViewSpy!
     private var sut: ReceiptListViewController!
@@ -41,6 +43,12 @@ final class ReceiptListViewControllerTests: XCTestCase {
         XCTAssertEqual(contentViewSpy.dataSourceArgs.count, 1)
     }
 
+    func test_viewDidLoad_shouldCallLoadDataOnce() {
+        sut.viewDidLoad()
+
+        XCTAssertEqual(presenterSpy.loadDataCallCount, 1)
+    }
+
     func test_viewDidLoad_setupTableViewDataSource_delegate_shouldCallOnce() {
         sut.viewDidLoad()
 
@@ -50,14 +58,18 @@ final class ReceiptListViewControllerTests: XCTestCase {
     func test_tableView_numberOfRowsInSection_shouldBeRight() {
         let tableView = makeTableView()
 
-        XCTAssertEqual(sut.tableView(tableView, numberOfRowsInSection: 0), 5)
+        XCTAssertEqual(sut.tableView(tableView, numberOfRowsInSection: 0), 0)
     }
 
     // MARK: - Helpers
 
     private func makeSUT() {
+        delegateSpy = ReceiptListViewControllerDelegateSpy()
+        presenterSpy = ReceiptListPresenterSpy()
         contentViewSpy = ReceiptListViewSpy()
-        sut = ReceiptListViewController(contentView: contentViewSpy)
+        sut = ReceiptListViewController(contentView: contentViewSpy,
+                                        presenter: presenterSpy)
+        sut.delegate = delegateSpy
         navigation = UINavigationController(rootViewController: sut)
     }
 

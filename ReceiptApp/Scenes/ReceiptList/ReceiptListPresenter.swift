@@ -1,10 +1,5 @@
 import Foundation
 
-struct ReceiptViewModel {
-    let receiptListCell: [ReceiptListViewModelCell]
-    let informations: [Informations]
-}
-
 final class ReceiptListPresenter {
 
     // MARK: - Internal Properties

@@ -1,6 +1,5 @@
 import UIKit
 
-
 final class ReceiptView: UIView {
 
     // MARK: - Private Properties
@@ -235,7 +234,6 @@ final class ReceiptView: UIView {
 extension ReceiptView: ReceiptViewType {
 
     func show(viewModel: Informations) {
-        print("VALOR 🤩: \(viewModel)")
         titleValueLabel.text = viewModel.title
         nameValueLabel.text = viewModel.name
         receiverNameValueLabel.text = viewModel.receiverName

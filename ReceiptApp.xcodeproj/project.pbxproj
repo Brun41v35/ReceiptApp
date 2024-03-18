@@ -27,6 +27,25 @@
 		7EEC35492BA76F9E00DDEC13 /* ReceiptListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35482BA76F9E00DDEC13 /* ReceiptListAdapter.swift */; };
 		7EEC354B2BA780F800DDEC13 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC354A2BA780F800DDEC13 /* MainCoordinator.swift */; };
 		7EEC354D2BA7831200DDEC13 /* MainCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC354C2BA7831200DDEC13 /* MainCoordinatorProtocols.swift */; };
+		7EEC354F2BA7905600DDEC13 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC354E2BA7905600DDEC13 /* NetworkManager.swift */; };
+		7EEC35532BA7A5E700DDEC13 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35522BA7A5E700DDEC13 /* NetworkManagerTests.swift */; };
+		7EEC35562BA7AB8B00DDEC13 /* URLSessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35552BA7AB8B00DDEC13 /* URLSessionSpy.swift */; };
+		7EEC35582BA7ABCD00DDEC13 /* URLSessionDataDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35572BA7ABCD00DDEC13 /* URLSessionDataDummy.swift */; };
+		7EEC355A2BA7C41100DDEC13 /* ReceiptListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35592BA7C41100DDEC13 /* ReceiptListPresenterTests.swift */; };
+		7EEC355C2BA7C66400DDEC13 /* ReceiptListAdapterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC355B2BA7C66400DDEC13 /* ReceiptListAdapterMock.swift */; };
+		7EEC355E2BA7C68A00DDEC13 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC355D2BA7C68A00DDEC13 /* NetworkManagerMock.swift */; };
+		7EEC35602BA7C92C00DDEC13 /* ReceiptListAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC355F2BA7C92C00DDEC13 /* ReceiptListAdapterTests.swift */; };
+		7EEC35622BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35612BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift */; };
+		7EEC35642BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35632BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift */; };
+		7EEC35662BA7CE9A00DDEC13 /* ReceiptPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35652BA7CE9A00DDEC13 /* ReceiptPresenter.swift */; };
+		7EEC356A2BA7CF1000DDEC13 /* ReceiptViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35692BA7CF1000DDEC13 /* ReceiptViewTests.swift */; };
+		7EEC356C2BA7D15600DDEC13 /* ReceiptViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC356B2BA7D15600DDEC13 /* ReceiptViewControllerTests.swift */; };
+		7EEC356F2BA7D22500DDEC13 /* ReceiptPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC356E2BA7D22500DDEC13 /* ReceiptPresenterSpy.swift */; };
+		7EEC35712BA7D28A00DDEC13 /* ReceiptViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35702BA7D28A00DDEC13 /* ReceiptViewSpy.swift */; };
+		7EEC35732BA7D3D400DDEC13 /* ReceiptPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35722BA7D3D400DDEC13 /* ReceiptPresenterTests.swift */; };
+		7EEC35752BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35742BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift */; };
+		7EEC35772BA7D77D00DDEC13 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35762BA7D77D00DDEC13 /* MainCoordinatorTests.swift */; };
+		7EEC357A2BA7D9D400DDEC13 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35792BA7D9D400DDEC13 /* NavigationControllerMock.swift */; };
 		7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */; };
 		7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */; };
 		7EFF51962B9FDCA5004EDED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF51952B9FDCA5004EDED5 /* Assets.xcassets */; };
@@ -66,6 +85,25 @@
 		7EEC35482BA76F9E00DDEC13 /* ReceiptListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListAdapter.swift; sourceTree = "<group>"; };
 		7EEC354A2BA780F800DDEC13 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		7EEC354C2BA7831200DDEC13 /* MainCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProtocols.swift; sourceTree = "<group>"; };
+		7EEC354E2BA7905600DDEC13 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7EEC35522BA7A5E700DDEC13 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		7EEC35552BA7AB8B00DDEC13 /* URLSessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionSpy.swift; sourceTree = "<group>"; };
+		7EEC35572BA7ABCD00DDEC13 /* URLSessionDataDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataDummy.swift; sourceTree = "<group>"; };
+		7EEC35592BA7C41100DDEC13 /* ReceiptListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListPresenterTests.swift; sourceTree = "<group>"; };
+		7EEC355B2BA7C66400DDEC13 /* ReceiptListAdapterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListAdapterMock.swift; sourceTree = "<group>"; };
+		7EEC355D2BA7C68A00DDEC13 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		7EEC355F2BA7C92C00DDEC13 /* ReceiptListAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListAdapterTests.swift; sourceTree = "<group>"; };
+		7EEC35612BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListPresenterSpy.swift; sourceTree = "<group>"; };
+		7EEC35632BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
+		7EEC35652BA7CE9A00DDEC13 /* ReceiptPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptPresenter.swift; sourceTree = "<group>"; };
+		7EEC35692BA7CF1000DDEC13 /* ReceiptViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewTests.swift; sourceTree = "<group>"; };
+		7EEC356B2BA7D15600DDEC13 /* ReceiptViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewControllerTests.swift; sourceTree = "<group>"; };
+		7EEC356E2BA7D22500DDEC13 /* ReceiptPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptPresenterSpy.swift; sourceTree = "<group>"; };
+		7EEC35702BA7D28A00DDEC13 /* ReceiptViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewSpy.swift; sourceTree = "<group>"; };
+		7EEC35722BA7D3D400DDEC13 /* ReceiptPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptPresenterTests.swift; sourceTree = "<group>"; };
+		7EEC35742BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewControllerSpy.swift; sourceTree = "<group>"; };
+		7EEC35762BA7D77D00DDEC13 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
+		7EEC35792BA7D9D400DDEC13 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
 		7EFF51892B9FDCA4004EDED5 /* ReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF518C2B9FDCA4004EDED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF518E2B9FDCA4004EDED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +146,10 @@
 		7E61FAA02BA51A6B005C9786 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7EEC35782BA7D9C500DDEC13 /* Doubles */,
+				7EEC35672BA7CEFD00DDEC13 /* Receipt */,
 				7E61FAA12BA51A7B005C9786 /* ReceiptList */,
+				7EEC35762BA7D77D00DDEC13 /* MainCoordinatorTests.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -119,6 +160,8 @@
 				7EA542CD2BA62BE700F2E3AB /* Doubles */,
 				7E61FAA22BA51A86005C9786 /* View */,
 				7EA542CB2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift */,
+				7EEC35592BA7C41100DDEC13 /* ReceiptListPresenterTests.swift */,
+				7EEC355F2BA7C92C00DDEC13 /* ReceiptListAdapterTests.swift */,
 			);
 			path = ReceiptList;
 			sourceTree = "<group>";
@@ -145,6 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				7EA542CE2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift */,
+				7EEC355B2BA7C66400DDEC13 /* ReceiptListAdapterMock.swift */,
+				7EEC355D2BA7C68A00DDEC13 /* NetworkManagerMock.swift */,
+				7EEC35612BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift */,
+				7EEC35632BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -155,6 +202,7 @@
 				7EA542D32BA6749300F2E3AB /* View */,
 				7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */,
 				7E5688E72BA70DDC00FFAF82 /* ReceiptProtocols.swift */,
+				7EEC35652BA7CE9A00DDEC13 /* ReceiptPresenter.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -173,16 +221,8 @@
 				7EEC35412BA7500B00DDEC13 /* Network */,
 				7E5688EB2BA7186D00FFAF82 /* Mock */,
 				7EE14B5A2BA0D83400046883 /* Model */,
-				7EA542D92BA6776500F2E3AB /* Views */,
 			);
 			path = Commons;
-			sourceTree = "<group>";
-		};
-		7EA542D92BA6776500F2E3AB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		7EE14B5A2BA0D83400046883 /* Model */ = {
@@ -199,8 +239,72 @@
 				7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */,
 				7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */,
 				7EEC35462BA7505D00DDEC13 /* APIError.swift */,
+				7EEC354E2BA7905600DDEC13 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		7EEC35502BA7A5D300DDEC13 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35512BA7A5DD00DDEC13 /* Network */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7EEC35512BA7A5DD00DDEC13 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35542BA7AB8300DDEC13 /* Doubles */,
+				7EEC35522BA7A5E700DDEC13 /* NetworkManagerTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7EEC35542BA7AB8300DDEC13 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35552BA7AB8B00DDEC13 /* URLSessionSpy.swift */,
+				7EEC35572BA7ABCD00DDEC13 /* URLSessionDataDummy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		7EEC35672BA7CEFD00DDEC13 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC356D2BA7D21B00DDEC13 /* Doubles */,
+				7EEC35682BA7CF0800DDEC13 /* View */,
+				7EEC356B2BA7D15600DDEC13 /* ReceiptViewControllerTests.swift */,
+				7EEC35722BA7D3D400DDEC13 /* ReceiptPresenterTests.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		7EEC35682BA7CF0800DDEC13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35692BA7CF1000DDEC13 /* ReceiptViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EEC356D2BA7D21B00DDEC13 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC356E2BA7D22500DDEC13 /* ReceiptPresenterSpy.swift */,
+				7EEC35702BA7D28A00DDEC13 /* ReceiptViewSpy.swift */,
+				7EEC35742BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		7EEC35782BA7D9C500DDEC13 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35792BA7D9D400DDEC13 /* NavigationControllerMock.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 		7EFF51802B9FDCA4004EDED5 = {
@@ -236,6 +340,7 @@
 		7EFF51A22B9FDCA5004EDED5 /* ReceiptAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7EEC35502BA7A5D300DDEC13 /* Commons */,
 				7E61FAA02BA51A6B005C9786 /* Scenes */,
 			);
 			path = ReceiptAppTests;
@@ -423,10 +528,12 @@
 				7EEC354B2BA780F800DDEC13 /* MainCoordinator.swift in Sources */,
 				7E5688E82BA70DDC00FFAF82 /* ReceiptProtocols.swift in Sources */,
 				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
+				7EEC35662BA7CE9A00DDEC13 /* ReceiptPresenter.swift in Sources */,
 				7EEC354D2BA7831200DDEC13 /* MainCoordinatorProtocols.swift in Sources */,
 				7EEC35492BA76F9E00DDEC13 /* ReceiptListAdapter.swift in Sources */,
 				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
 				7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */,
+				7EEC354F2BA7905600DDEC13 /* NetworkManager.swift in Sources */,
 				7EEC35432BA7501C00DDEC13 /* NetworkManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,10 +542,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEC35622BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift in Sources */,
+				7EEC356F2BA7D22500DDEC13 /* ReceiptPresenterSpy.swift in Sources */,
 				7EA542CC2BA6277500F2E3AB /* ReceiptListViewControllerTests.swift in Sources */,
+				7EEC356C2BA7D15600DDEC13 /* ReceiptViewControllerTests.swift in Sources */,
+				7EEC35582BA7ABCD00DDEC13 /* URLSessionDataDummy.swift in Sources */,
+				7EEC355A2BA7C41100DDEC13 /* ReceiptListPresenterTests.swift in Sources */,
+				7EEC355E2BA7C68A00DDEC13 /* NetworkManagerMock.swift in Sources */,
+				7EEC35532BA7A5E700DDEC13 /* NetworkManagerTests.swift in Sources */,
 				7EA542D12BA6721D00F2E3AB /* ReceiptListViewTests.swift in Sources */,
+				7EEC355C2BA7C66400DDEC13 /* ReceiptListAdapterMock.swift in Sources */,
+				7EEC35562BA7AB8B00DDEC13 /* URLSessionSpy.swift in Sources */,
+				7EEC35602BA7C92C00DDEC13 /* ReceiptListAdapterTests.swift in Sources */,
 				7E61FAA42BA51A97005C9786 /* ReceiptListViewCellTests.swift in Sources */,
+				7EEC35642BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift in Sources */,
+				7EEC356A2BA7CF1000DDEC13 /* ReceiptViewTests.swift in Sources */,
 				7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */,
+				7EEC35752BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift in Sources */,
+				7EEC357A2BA7D9D400DDEC13 /* NavigationControllerMock.swift in Sources */,
+				7EEC35772BA7D77D00DDEC13 /* MainCoordinatorTests.swift in Sources */,
+				7EEC35712BA7D28A00DDEC13 /* ReceiptViewSpy.swift in Sources */,
+				7EEC35732BA7D3D400DDEC13 /* ReceiptPresenterTests.swift in Sources */,
 				7E61FAAA2BA54A34005C9786 /* ReceiptListViewModelCell+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
