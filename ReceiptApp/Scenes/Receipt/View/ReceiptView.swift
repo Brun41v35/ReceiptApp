@@ -31,12 +31,14 @@ final class ReceiptView: UIView {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .light)
         label.text = "Titulo"
         return label
     }()
 
     private let titleValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -51,11 +53,13 @@ final class ReceiptView: UIView {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Nome"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let nameValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -70,11 +74,13 @@ final class ReceiptView: UIView {
     private let receiverNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Nome do favorecido"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let receiverNameValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -89,11 +95,13 @@ final class ReceiptView: UIView {
     private let amountLabel: UILabel = {
         let label = UILabel()
         label.text = "Valor"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let amountValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -108,11 +116,13 @@ final class ReceiptView: UIView {
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.text = "Data"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let dateValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -127,11 +137,13 @@ final class ReceiptView: UIView {
     private let controlLabel: UILabel = {
         let label = UILabel()
         label.text = "Controle"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let controlValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
@@ -146,11 +158,13 @@ final class ReceiptView: UIView {
     private let receiptIdLabel: UILabel = {
         let label = UILabel()
         label.text = "ID da transação"
+        label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
 
     private let receiptIdValueLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         return label
     }()
 
