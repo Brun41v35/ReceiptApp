@@ -22,7 +22,8 @@ final class MainCoordinator: MainCoordinatorType {
     // MARK: - Private Methods
 
     private func showReceiptListViewController() {
-        let presenter = ReceiptListPresenter(networkManager: NetworkManagerMock())
+        let networking = Networking(factoryNetworking: FactoryNetworking())
+        let presenter = ReceiptListPresenter(networkManager: networking)
         let controller = ReceiptListViewController(presenter: presenter)
         controller.delegate = self
         presenter.viewController = controller
