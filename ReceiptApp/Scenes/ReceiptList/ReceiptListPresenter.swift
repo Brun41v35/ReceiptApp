@@ -8,12 +8,12 @@ final class ReceiptListPresenter {
 
     // MARK: - Private Properties
 
-    private let networkManager: NetworkManagerType
+    private let networkManager: NetworkingType
     private let adapter: ReceiptListAdapterType
 
     // MARK: - Init
 
-    init(networkManager: NetworkManagerType,
+    init(networkManager: NetworkingType,
          adapter: ReceiptListAdapterType = ReceiptListAdapter()) {
         self.networkManager = networkManager
         self.adapter = adapter
@@ -22,22 +22,18 @@ final class ReceiptListPresenter {
     // MARK: - Private Methods
 
     private func fetchData() {
-        networkManager.fetchData { [weak self] result in
+        networkManager.environment().fetchData { [weak self] result in
             self?.handleResponse(with: result)
         }
     }
 
     private func handleResponse(with result: Result<ReceiptData, APIError>) {
-        switch result {
-        case .success(let response):
-
+        if case .success(let response) = result {
             let valueAdapted = adapter.adapt(with: response)
             let informations = response.data.receipts
 
             viewController?.receiptCell = valueAdapted
             viewController?.informations = informations
-        case .failure(let failure):
-            print("‼️: \(failure)")
         }
     }
 }
