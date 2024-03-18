@@ -37,7 +37,10 @@ final class ReceiptListViewCell: UITableViewCell {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.adjustsFontForContentSizeCategory = true
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -62,6 +65,7 @@ final class ReceiptListViewCell: UITableViewCell {
 
     private let amountLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.adjustsFontForContentSizeCategory = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -85,6 +89,7 @@ final class ReceiptListViewCell: UITableViewCell {
         addHierarchyView()
         setupConstraints()
         setupBackgroundColor()
+        setupAccessibility()
     }
 
     private func addHierarchyView() {
@@ -121,6 +126,10 @@ final class ReceiptListViewCell: UITableViewCell {
         backgroundColor = .systemBackground
     }
 
+    private func setupAccessibility() {
+        accessibilityTraits = .button
+    }
+
     // MARK: - Internal Methods
 
     func show(viewModel: ReceiptListViewModelCell) {
@@ -128,5 +137,8 @@ final class ReceiptListViewCell: UITableViewCell {
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
         amountLabel.text = viewModel.amount
+
+        accessibilityLabel = viewModel.title
+        accessibilityValue = "\(viewModel.name), \(viewModel.date), \(viewModel.amount)"
     }
 }

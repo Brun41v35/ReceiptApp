@@ -20,6 +20,18 @@ final class ReceiptListViewCellTests: FBSnapshotTestCase {
         FBSnapshotVerifyView(sut)
     }
 
+    func test_init_shouldHaveRightAccessibilityTraits() {
+        XCTAssertEqual(sut.accessibilityTraits, .button)
+    }
+
+    func test_init_shouldHaveRightAccessibilityLabel() {
+        XCTAssertEqual(sut.accessibilityLabel, "Transferência")
+    }
+
+    func test_init_shouldHaveRightAccessibilityValue() {
+        XCTAssertEqual(sut.accessibilityValue, "Débora dos Santos, qua, 27 de abril de 2022, R$ 5.000,00")
+    }
+
     // MARK: - Helper
 
     private func makeSUT() {
