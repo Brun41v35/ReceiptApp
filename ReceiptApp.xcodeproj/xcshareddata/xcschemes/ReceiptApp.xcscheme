@@ -68,6 +68,11 @@
             value = "$(SOURCE_ROOT)/ReceiptAppTests/ReferenceImages"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "Mocked"
+            value = "true"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
