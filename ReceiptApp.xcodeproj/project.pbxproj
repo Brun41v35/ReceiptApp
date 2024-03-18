@@ -20,6 +20,10 @@
 		7EA542D12BA6721D00F2E3AB /* ReceiptListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */; };
 		7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */; };
 		7EA542D72BA6750100F2E3AB /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA542D62BA6750100F2E3AB /* ReceiptView.swift */; };
+		7EB872012BA84D9C005C3339 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB872002BA84D9C005C3339 /* Networking.swift */; };
+		7EB872042BA84E25005C3339 /* FactoryNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB872032BA84E25005C3339 /* FactoryNetworking.swift */; };
+		7EB872062BA84E49005C3339 /* FactoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB872052BA84E49005C3339 /* FactoryProtocols.swift */; };
+		7EB872082BA85670005C3339 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB872072BA85670005C3339 /* NetworkMock.swift */; };
 		7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */; };
 		7EEC35432BA7501C00DDEC13 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */; };
 		7EEC35452BA7503D00DDEC13 /* NetworkManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */; };
@@ -78,6 +82,10 @@
 		7EA542D02BA6721D00F2E3AB /* ReceiptListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListViewTests.swift; sourceTree = "<group>"; };
 		7EA542D42BA674AA00F2E3AB /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		7EA542D62BA6750100F2E3AB /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		7EB872002BA84D9C005C3339 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7EB872032BA84E25005C3339 /* FactoryNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryNetworking.swift; sourceTree = "<group>"; };
+		7EB872052BA84E49005C3339 /* FactoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocols.swift; sourceTree = "<group>"; };
+		7EB872072BA85670005C3339 /* NetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
 		7EE14B5C2BA0D95F00046883 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
 		7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
 		7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocols.swift; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 				7EEC355D2BA7C68A00DDEC13 /* NetworkManagerMock.swift */,
 				7EEC35612BA7CA5C00DDEC13 /* ReceiptListPresenterSpy.swift */,
 				7EEC35632BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift */,
+				7EB872072BA85670005C3339 /* NetworkMock.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -218,11 +227,21 @@
 		7EA542D82BA6774B00F2E3AB /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				7EB872022BA84E1B005C3339 /* Factory */,
 				7EEC35412BA7500B00DDEC13 /* Network */,
 				7E5688EB2BA7186D00FFAF82 /* Mock */,
 				7EE14B5A2BA0D83400046883 /* Model */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		7EB872022BA84E1B005C3339 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7EB872032BA84E25005C3339 /* FactoryNetworking.swift */,
+				7EB872052BA84E49005C3339 /* FactoryProtocols.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		7EE14B5A2BA0D83400046883 /* Model */ = {
@@ -237,9 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				7EEC35422BA7501C00DDEC13 /* NetworkManagerMock.swift */,
+				7EEC354E2BA7905600DDEC13 /* NetworkManager.swift */,
 				7EEC35442BA7503D00DDEC13 /* NetworkManagerProtocols.swift */,
 				7EEC35462BA7505D00DDEC13 /* APIError.swift */,
-				7EEC354E2BA7905600DDEC13 /* NetworkManager.swift */,
+				7EB872002BA84D9C005C3339 /* Networking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -515,12 +535,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB872042BA84E25005C3339 /* FactoryNetworking.swift in Sources */,
 				7E88671E2BA072DA008AFE4F /* ReceiptListProtocols.swift in Sources */,
 				7EFF51C12B9FE343004EDED5 /* ReceiptListViewController.swift in Sources */,
 				7EFF51C72B9FEF4F004EDED5 /* ReceiptListViewCell.swift in Sources */,
 				7EA542D52BA674AA00F2E3AB /* ReceiptViewController.swift in Sources */,
 				7EFF518D2B9FDCA4004EDED5 /* AppDelegate.swift in Sources */,
 				7E5688EA2BA7129100FFAF82 /* ReceiptListPresenter.swift in Sources */,
+				7EB872012BA84D9C005C3339 /* Networking.swift in Sources */,
 				7EFF518F2B9FDCA4004EDED5 /* SceneDelegate.swift in Sources */,
 				7EFF51C52B9FE42F004EDED5 /* ReceiptListView.swift in Sources */,
 				7EEC35472BA7505D00DDEC13 /* APIError.swift in Sources */,
@@ -529,6 +551,7 @@
 				7E5688E82BA70DDC00FFAF82 /* ReceiptProtocols.swift in Sources */,
 				7EE14B5D2BA0D95F00046883 /* ReceiptData.swift in Sources */,
 				7EEC35662BA7CE9A00DDEC13 /* ReceiptPresenter.swift in Sources */,
+				7EB872062BA84E49005C3339 /* FactoryProtocols.swift in Sources */,
 				7EEC354D2BA7831200DDEC13 /* MainCoordinatorProtocols.swift in Sources */,
 				7EEC35492BA76F9E00DDEC13 /* ReceiptListAdapter.swift in Sources */,
 				7E8867212BA0756A008AFE4F /* ReceiptListViewModelCell.swift in Sources */,
@@ -558,6 +581,7 @@
 				7EEC35642BA7CC1600DDEC13 /* ReceiptListViewControllerDelegateSpy.swift in Sources */,
 				7EEC356A2BA7CF1000DDEC13 /* ReceiptViewTests.swift in Sources */,
 				7EA542CF2BA62BEF00F2E3AB /* ReceiptListViewSpy.swift in Sources */,
+				7EB872082BA85670005C3339 /* NetworkMock.swift in Sources */,
 				7EEC35752BA7D4CD00DDEC13 /* ReceiptViewControllerSpy.swift in Sources */,
 				7EEC357A2BA7D9D400DDEC13 /* NavigationControllerMock.swift in Sources */,
 				7EEC35772BA7D77D00DDEC13 /* MainCoordinatorTests.swift in Sources */,
