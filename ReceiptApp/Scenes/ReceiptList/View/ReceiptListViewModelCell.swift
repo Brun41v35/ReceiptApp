@@ -1,6 +1,6 @@
 import Foundation
 
-struct ReceiptListViewModelCell {
+struct ReceiptListViewModelCell: Equatable {
     let title: String
     let name: String
     let date: String

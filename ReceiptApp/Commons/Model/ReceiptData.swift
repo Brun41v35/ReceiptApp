@@ -1,12 +1,18 @@
 import Foundation
 
 struct ReceiptData: Decodable, Equatable {
-    let receipts: [Receipts]
+    let data: Receipts
 }
 
 // MARK: - Receipts
 
 struct Receipts: Decodable, Equatable {
+    let receipts: [Informations]
+}
+
+// MARK: - Informations
+
+struct Informations: Decodable, Equatable {
     let title: String
     let receiptId: String
     let name: String

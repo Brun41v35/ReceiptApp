@@ -1,15 +1,24 @@
 import UIKit
 
-final class ReceiptListViewController: UIViewController {
+final class ReceiptListViewController: UIViewController, ReceiptListViewControllerType {
+
+    // MARK: - Internal
+
+    var delegate: ReceiptListViewControllerDelegate?
+    var receiptCell: [ReceiptListViewModelCell]?
+    var informations: [Informations]?
 
     // MARK: - Private Properties
 
     private let contentView: ReceiptListViewType
+    private let presenter: ReceiptListPresenterType
 
     // MARK: - Init
 
-    init(contentView: ReceiptListViewType = ReceiptListView()) {
+    init(contentView: ReceiptListViewType = ReceiptListView(),
+         presenter: ReceiptListPresenterType) {
         self.contentView = contentView
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -35,6 +44,7 @@ final class ReceiptListViewController: UIViewController {
     private func setup() {
         setupNavigationTitle()
         setupTableViewDataSource()
+        presenter.loadData()
     }
 
     private func setupNavigationTitle() {
@@ -52,20 +62,19 @@ final class ReceiptListViewController: UIViewController {
 extension ReceiptListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return receiptCell?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptListViewCell", for: indexPath) as? ReceiptListViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptListViewCell",
+                                                       for: indexPath) as? ReceiptListViewCell else {
             return UITableViewCell()
         }
-        cell.selectionStyle = .none
-        let viewModel = ReceiptListViewModelCell(title: "Transferência",
-                                                 name: "Débora dos Santos",
-                                                 date: "qua, 27 de abril de 2022",
-                                                 amount: "R$ 5.000,00")
+        guard let viewModel = receiptCell?[indexPath.row] else { return UITableViewCell() }
+    
         cell.show(viewModel: viewModel)
+        cell.selectionStyle = .none
 
         return cell
     }
@@ -74,5 +83,9 @@ extension ReceiptListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 
 extension ReceiptListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let informations = informations?[indexPath.row] else { return }
+        delegate?.showReceipt(with: informations)
+    }
 }
