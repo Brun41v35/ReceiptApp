@@ -31,12 +31,6 @@ final class ReceiptListViewControllerTests: XCTestCase {
         XCTAssertEqual(navigation.title, "Receipt 🧾")
     }
 
-    func test_viewDidLoad_setupNavigationTitle_navigationControllerNavigationBarPrefersLargeTitlesShouldBeTrue() {
-        sut.viewDidLoad()
-
-        XCTAssertEqual(navigation.navigationBar.prefersLargeTitles, true)
-    }
-
     func test_viewDidLoad_setupTableViewDataSource_dataSource_shouldCallOnce() {
         sut.viewDidLoad()
 

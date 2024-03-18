@@ -49,7 +49,6 @@ final class ReceiptListViewController: UIViewController, ReceiptListViewControll
 
     private func setupNavigationTitle() {
         title = "Receipt 🧾"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     private func setupTableViewDataSource() {
