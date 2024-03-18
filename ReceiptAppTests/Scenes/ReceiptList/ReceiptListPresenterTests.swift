@@ -5,7 +5,7 @@ final class ReceiptListPresenterTests: XCTestCase {
 
     // MARK: - Properties
 
-    private var networkManagerMock: NetworkManagerMock!
+    private var networkMock: NetworkMock!
     private var adapterMock: ReceiptListAdapterMock!
     private var sut: ReceiptListPresenter!
 
@@ -13,9 +13,9 @@ final class ReceiptListPresenterTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        networkManagerMock = NetworkManagerMock()
+        networkMock = NetworkMock()
         adapterMock = ReceiptListAdapterMock()
-        sut = ReceiptListPresenter(networkManager: networkManagerMock,
+        sut = ReceiptListPresenter(networkManager: networkMock,
                                    adapter: adapterMock)
     }
 
@@ -26,10 +26,10 @@ final class ReceiptListPresenterTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_loadData_shouldCall_networkManagerFetchDataOnce() {
+    func test_loadData_shouldCall_networkManagerEnvironmentOnce() {
         sut.loadData()
 
-        XCTAssertEqual(networkManagerMock.fetchDataCallCount, 1)
+        XCTAssertEqual(networkMock.environmentCallCount, 1)
     }
 
     func test_loadData_shouldCall_adapterOnce() {
